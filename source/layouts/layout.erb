@@ -10,21 +10,37 @@
           href="https://fonts.googleapis.com/css?family=Karla:400,700">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lora:400,400i,700">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title><%= current_page.data.title %></title>
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
   </head>
 
-  <div class="header">
-    <%= partial "partials/_header" %>
-  </div>
 
   <body>
-    <%= yield %>
-  </body>
+    <div class="container-fluid">
+      <div class="row no-gutters">
+        <div class="col-10 text-left order-1">
+          <h1><a href="/">Alex Ramos</a></h1>
+        </div>
+        <div class="col-2 text-right order-2">
+          <%= partial "partials/_navigation" %>
+        </div>
+      </div>
 
-  <div class="footer">
-    <%= partial "partials/_footer" %>
-  </div>
+      <div class="row no-gutters">
+        <div class="col">
+          <%= yield %>
+        </div>
+      </div>
+
+      <div class="row no-gutters">
+        <footer>
+          <%= partial "partials/_footer" %>
+        </footer>
+      </div>
+    </div>
+  </body>
 
 </html>
