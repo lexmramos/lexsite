@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.6.3'
+ruby '2.6.4'
 
 gem 'rake', '~> 12.3'
 gem 'puma', '~> 3.12'

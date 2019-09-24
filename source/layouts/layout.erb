@@ -19,28 +19,8 @@
 
 
   <body>
-    <div class="container-fluid">
-      <div class="row no-gutters">
-        <div class="col-10 text-left order-1">
-          <h1><a href="/">Alex Ramos</a></h1>
-        </div>
-        <div class="col-2 text-right order-2">
-          <%= partial "partials/_navigation" %>
-        </div>
-      </div>
-
-      <div class="row no-gutters">
-        <div class="col">
-          <%= yield %>
-        </div>
-      </div>
-
-      <div class="row no-gutters">
-        <footer>
-          <%= partial "partials/_footer" %>
-        </footer>
-      </div>
-    </div>
+        <%= yield %>
+        <%= partial "partials/_footer" %>
   </body>
 
 </html>

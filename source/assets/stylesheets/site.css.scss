@@ -1,35 +1,23 @@
-// bootstrap
+// bootstrap & containers
 .container-fluid {
-  width: 100%;
-  margin: 0;
-  flex-wrap: wrap;
+  height: 100%;
 }
 
-.no-gutters{
-  margin: 0;
-
-  > .row{
-  }
-
-  > .col,
-  > [class*="col-"] {
-    padding-right: 0;
-    padding-left: 0;
-    }
-  }
-
-// parts + pages
-.about {
-  text-indent: 3%;
-  img {
-    width: 30%;
-    padding: 5px 20px 15px 0px;
-    float: left;
-    position: relative;
-  }
+.row {
+  height: 100%;
 }
 
-// body + text
+.footer {
+  height: 35px;
+  text-align: center;
+}
+
+// images
+img {
+  width:100%;
+}
+
+// body & text
 body {
   background-color: #ffffff;
   color: #333333;
@@ -38,7 +26,9 @@ body {
   font-size: 12px;
   text-align: justify;
   line-height: 20px;
-  padding: 70px 70px 70px 70px;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
 }
 
 a {
@@ -51,21 +41,20 @@ a {
   }
 }
 
-i, em {
+i {
   font-style: italic;
 }
 
-b, strong {
+b {
   font-weight: bold;
 }
 
 h1 {
-  font-size: 44px;
+  font-size: 150px;
   font-family: 'Lora', serif;
-  font-weight: normal;
+  line-height: 116px;
+  letter-spacing: -12px;
   font-style: italic;
-  font-display: swap;
-  text-align: left;
 }
 
 h1 a {
@@ -77,6 +66,17 @@ h1 a {
   }
 }
 
-p {
-  line-height: 20px;
+h2 {
+  font-size: 44px;
+  font-family: 'Karla', sans-serif;
+  font-weight: normal;
+}
+
+h2 a {
+  text-decoration: none;
+  &:hover {
+    color: #333333;
+    text-decoration: none;
+    filter: opacity(.5);
+  }
 }
