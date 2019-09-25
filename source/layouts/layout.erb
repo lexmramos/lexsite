@@ -19,8 +19,12 @@
 
 
   <body>
-    <%= partial "partials/_navigation"%>
+    <% unless current_page.url == "/" %>
+       <%= partial "partials/_navigation" %>
+    <% end %>
+
     <%= yield %>
+
     <%= partial "partials/_footer" %>
   </body>
 
