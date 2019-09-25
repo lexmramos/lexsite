@@ -1,4 +1,4 @@
-// bootstrap & page-specific classes
+// bootstrap, page classes, menu
 .container-fluid {
   height: 100%;
 }
@@ -9,7 +9,26 @@
 
 .footer {
   height: 35px;
+  padding: 5px 0px 10px 0px;
   text-align: center;
+}
+
+.dropdown {
+  height: 35px;
+  width: 100%;
+  border: 1px #000;
+  padding: 10px 0px 5px 0px;
+  display: inline-block;
+  text-align: center;
+}
+
+.dropdown-content {
+  display: none;
+  text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 // images
