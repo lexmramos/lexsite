@@ -1,5 +1,3 @@
-#README
-
 hi, this is my (alex's) personal website!
 
 i am using ruby v 2.6.4
