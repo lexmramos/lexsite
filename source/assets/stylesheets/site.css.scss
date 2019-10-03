@@ -22,6 +22,15 @@
   word-spacing: 15px;
   text-align: center;
   line-height: 20px;
+  a{
+    color: #333333;
+    text-decoration: none;
+    &:hover {
+      color: inherit;
+      text-decoration: none;
+      filter: opacity(.5);
+    }
+  }
 }
 
 .navigation-content {
@@ -32,6 +41,18 @@
 
 .navigation:hover .navigation-content {
   display: block;
+}
+
+.link-list{
+  a{
+    color: #333333;
+    text-decoration: none;
+    &:hover {
+      color: inherit;
+      text-decoration: none;
+      filter: opacity(.5);
+    }
+  }
 }
 
 // images
@@ -52,7 +73,7 @@ body {
 }
 
 a {
-  color: #333333;
+  color: #ee4000;
   text-decoration: none;
   &:hover {
     color: inherit;
