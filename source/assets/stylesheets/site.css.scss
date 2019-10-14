@@ -99,7 +99,7 @@ h1 {
 h2 {
   font-size: 55px;
   font-family: 'Lora', serif;
-  color: #ee4000;
+  color: #333333;
   font-style: italic;
   letter-spacing: -4px;
 }
@@ -110,4 +110,12 @@ h3 {
   color: #333333;
   font-style: italic;
   letter-spacing: -1;
+}
+
+.title {
+  font-size: 55px;
+  font-family: 'Lora', serif;
+  color: #ee4000;
+  font-style: italic;
+  letter-spacing: -4px;
 }
