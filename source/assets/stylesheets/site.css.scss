@@ -19,12 +19,13 @@
   width: 100%;
   background: #fff;
   display: inline-block;
-  word-spacing: 15px;
   text-align: center;
   line-height: 20px;
   a{
     color: #333333;
     text-decoration: none;
+    padding-left: 7px;
+    padding-right: 7px;
     &:hover {
       color: inherit;
       text-decoration: none;
@@ -101,4 +102,12 @@ h2 {
   color: #ee4000;
   font-style: italic;
   letter-spacing: -4px;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: 'Lora', serif;
+  color: #333333;
+  font-style: italic;
+  letter-spacing: -1;
 }
