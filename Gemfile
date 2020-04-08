@@ -2,10 +2,10 @@ source 'https://rubygems.org'
 
 ruby '2.6.4'
 
-gem 'rake', '~> 12.3'
-gem 'puma', '~> 3.12'
-gem 'foreman', '~> 0.63'
-gem 'bootstrap', '~> 4.3.1'
+gem 'rake', '~> 13.0'
+gem 'puma', '~> 4.3'
+gem 'foreman', '~> 0.87'
+gem 'bootstrap', '~> 4.4.1'
 gem 'middleman', '~> 4.2'
 gem 'middleman-autoprefixer', '~> 2.7'
 gem "middleman-livereload", "~> 3.4.3"
