@@ -42,10 +42,16 @@ GEM
       http_parser.rb (~> 0.6.0)
     erubis (2.7.0)
     eventmachine (1.2.7)
+    eventmachine (1.2.7-java)
+    eventmachine (1.2.7-x64-mingw32)
+    eventmachine (1.2.7-x86-mingw32)
     execjs (2.7.0)
     fast_blank (1.0.0)
     fastimage (2.1.7)
     ffi (1.12.2)
+    ffi (1.12.2-java)
+    ffi (1.12.2-x64-mingw32)
+    ffi (1.12.2-x86-mingw32)
     foreman (0.87.1)
     haml (5.1.2)
       temple (>= 0.8.0)
@@ -54,6 +60,7 @@ GEM
       concurrent-ruby (~> 1.0)
     hashie (3.6.0)
     http_parser.rb (0.6.0)
+    http_parser.rb (0.6.0-java)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     kramdown (1.17.0)
@@ -106,7 +113,13 @@ GEM
     mini_portile2 (2.4.0)
     minitest (5.14.0)
     nio4r (2.5.2)
+    nio4r (2.5.2-java)
     nokogiri (1.10.9)
+      mini_portile2 (~> 2.4.0)
+    nokogiri (1.10.9-java)
+    nokogiri (1.10.9-x64-mingw32)
+      mini_portile2 (~> 2.4.0)
+    nokogiri (1.10.9-x86-mingw32)
       mini_portile2 (~> 2.4.0)
     padrino-helpers (0.13.3.4)
       i18n (~> 0.6, >= 0.6.7)
@@ -118,6 +131,8 @@ GEM
     popper_js (1.16.0)
     public_suffix (4.0.4)
     puma (4.3.3)
+      nio4r (~> 2.0)
+    puma (4.3.3-java)
       nio4r (~> 2.0)
     rack (2.2.2)
     rack-livereload (0.3.17)
@@ -141,6 +156,10 @@ GEM
       ffi (~> 1.0)
     sassc (2.2.1)
       ffi (~> 1.9)
+    sassc (2.2.1-x64-mingw32)
+      ffi (~> 1.9)
+    sassc (2.2.1-x86-mingw32)
+      ffi (~> 1.9)
     sassc-rails (2.1.2)
       railties (>= 4.0.0)
       sassc (>= 2.0)
@@ -158,14 +177,22 @@ GEM
     temple (0.8.2)
     thor (1.0.1)
     thread_safe (0.3.6)
+    thread_safe (0.3.6-java)
     tilt (2.0.10)
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2019.3)
+      tzinfo (>= 1.0.0)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
+    wdm (0.1.1)
 
 PLATFORMS
+  java
   ruby
+  x64-mingw32
+  x86-mingw32
+  x86-mswin32
 
 DEPENDENCIES
   bootstrap (~> 4.4.1)
@@ -182,4 +209,4 @@ RUBY VERSION
    ruby 2.6.4p104
 
 BUNDLED WITH
-   1.17.3
+   2.1.4
