@@ -1,48 +1,20 @@
-// bootstrap, partials
+// site-wide styles 
+
 .container-fluid {
   height: 100%;
+  overflow-y: auto;
 }
 
-.row{
-  height: 100%;
-  justify-content: center;
+.with-navbar {
+  margin-top: 40px;
 }
 
-.navigation {
-  height: 20px;
-  width: 100%;
-  background: #fff;
-  display: inline-block;
-  text-align: center;
-  line-height: 20px;
-  a{
-    color: #333333;
-    text-decoration: none;
-    padding: 0 .5em 0 .5em;
-    &:hover {
-      color: inherit;
-      text-decoration: none;
-      filter: opacity(.5);
-    }
-  }
+.content-margin {
+  margin: 1em;
 }
 
-.navigation-content {
-  height: 20px;
-  background: #fff;
-  display: none;
-}
-
-.navigation:hover .navigation-content {
-  display: block;
-}
-
-.footer {
-  height: 20px;
-  width: 100%;
-  background: #fff;
-  display: inline-block;
-  text-align: center;
+.content-row {
+  min-height: 100%;
 }
 
 // images
@@ -56,7 +28,7 @@ img {
   padding: .4em .8em 0em .5em;
 }
 
-// general body and text
+// body and text
 body {
   height: 100vh;
   display: flex;
@@ -67,8 +39,11 @@ body {
   line-height: 1.7em;
 }
 
+.red {
+  color: #ee4000 !important;
+}
+
 a {
-  color: #ee4000;
   text-decoration: none;
   &:hover {
     color: inherit;
@@ -77,14 +52,9 @@ a {
   }
 }
 
-b, i {
-  color: #ee4000;
-}
-
 h1 {
   font-family: 'Lora', serif;
   font-size: 50px;
-  color: #ee4000;
   font-style: italic;
   line-height: 1.2em;
   letter-spacing: -3px;
@@ -115,26 +85,41 @@ h4 {
   line-height: 1.2em;
 }
 
+.video-title {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  padding: 0 2em;
+}
 
-// page specific text styling
+.page-title {
+  font-size: 60px;
+  font-family: 'Lora', serif;
+  font-style: italic;
+  text-align: right;
+  line-height: .8em;
+  letter-spacing: -4.5px;
+}
+
 .index-title {
   font-size: 100px;
   font-family: 'Lora', serif;
-  color: #ee4000;
   font-style: italic;
   text-align: right;
   line-height: .6em;
   letter-spacing: -7px;
 }
 
-.page-title {
-  font-size: 60px;
-  font-family: 'Lora', serif;
-  color: #ee4000;
-  font-style: italic;
-  text-align: right;
-  line-height: .8em;
-  letter-spacing: -4.5px;
+.link-list{
+  a{
+    display: inline-block;
+    color: #333333;
+    text-decoration: none;
+    &:hover {
+      color: inherit;
+      text-decoration: none;
+      filter: opacity(.5);
+    }
+  }
 }
 
 .writing {
@@ -144,14 +129,84 @@ h4 {
   line-height: 1.5em;
 }
 
-.link-list{
+// header
+.menu {
+  color: white !important;
+  background: #ee4000;
+  display: inline-block;
+  padding: 0 .5em 1px .5em;
+  border-radius: 5px;
+}
+
+.navigation {
+  width: 100%;
+  background: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 20px;
   a{
     color: #333333;
     text-decoration: none;
+    padding: 0 .5em 0 .5em;
     &:hover {
       color: inherit;
       text-decoration: none;
       filter: opacity(.5);
     }
+  }
+}
+
+.navigation-content {
+  height: 20px;
+  background: #fff;
+  display: none;
+}
+
+.navigation:hover .navigation-content {
+  display: block;
+}
+
+// footer
+.footer {
+  height: 20px;
+  width: 100%;
+  background: #fff;
+  display: inline-block;
+  text-align: center;
+}
+
+// mobile 
+@media (max-width: 600px) {
+  .page-title {
+    text-align: center;
+  }
+  .index-title {
+    text-align: center;
+  }
+  .video-title {
+    font-size: 12px;
+  }
+  .link-list{
+    text-align: center;
+    margin: 1em;
+  }
+  .h-100 {
+    height: auto;
+  }
+  .navigation {
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .navigation-content {
+    height: 30px;
+  }
+  .link-list {
+    font-size: 14px;
+    a {
+      margin: .3em 0;
+    }
+  }
+  .menu {
+    font-size: 16px;
   }
 }
