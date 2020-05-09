@@ -1,6 +1,6 @@
-hi, this is my (alex's) personal website!
+hi! this is alex's personal website
 
-i am using ruby v 2.6.4
+i'm using ruby v2.6.4
 
 once you've got the project downloaded or pulled:
 
@@ -9,5 +9,4 @@ and then run ```middleman server```
 
 you should be able to view it on localhost:4567 in your browser
 
-
-<3
+:•)
