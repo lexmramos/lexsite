@@ -176,7 +176,7 @@ h4 {
 }
 
 // mobile 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .page-title {
     text-align: center;
   }
@@ -186,13 +186,6 @@ h4 {
   .video-title {
     font-size: 12px;
   }
-  .link-list{
-    text-align: center;
-    margin: 1em;
-  }
-  .h-100 {
-    height: auto;
-  }
   .navigation {
     font-size: 14px;
     line-height: 30px;
@@ -201,6 +194,8 @@ h4 {
     height: 30px;
   }
   .link-list {
+    text-align: center;
+    margin: 1em;
     font-size: 14px;
     a {
       margin: .3em 0;
