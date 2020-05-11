@@ -24,13 +24,13 @@
     <% unless current_page.url == "/" %>
        <%= partial "layouts/partials/navigation" %>
     <% end %>
-    <div class="container-fluid<%= current_page.url == "/" ? "" : " with-navbar" %>">
+    <div class="container-fluid<%= current_page.url == "/" ? "" : " with-navigation" %>">
       <div class="row content-row">
-        <div class="col-xl-8 offset-xl-2 align-self-center"> 
+        <div class="col-xl-8 offset-xl-2 align-self-center">
           <%= yield %>
         </div>
       </div>
-    </div> 
+    </div>
     <%= partial "layouts/partials/footer" %>
   </body>
 

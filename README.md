@@ -9,4 +9,6 @@ and then run ```middleman server```
 
 you should be able to view it on localhost:4567 in your browser
 
+many thanks to walker spence for cleaning this up <3
+
 :•)

@@ -1,16 +1,16 @@
-// site-wide styles 
+// site-wide styles
 
 .container-fluid {
   height: 100%;
   overflow-y: auto;
 }
 
-.with-navbar {
-  margin-top: 40px;
+.with-navigation {
+  padding: 3em 0 1.5em 0;
 }
 
 .content-margin {
-  margin: 1em;
+  margin: 3em 0;
 }
 
 .content-row {
@@ -25,7 +25,7 @@ img {
 .img-fiona{
   max-width: 35%;
   max-height: 35%;
-  padding: .4em .8em 0em .5em;
+  padding: 0 .8em 0 .4em;
 }
 
 // body and text
@@ -39,17 +39,18 @@ body {
   line-height: 1.7em;
 }
 
-.red {
-  color: #ee4000 !important;
-}
-
 a {
-  text-decoration: none;
+  color: #333333;
+  text-decoration: underline dashed #ee4000;
   &:hover {
     color: inherit;
     text-decoration: none;
     filter: opacity(.5);
   }
+}
+
+.red {
+  color: #ee4000 !important;
 }
 
 h1 {
@@ -58,46 +59,26 @@ h1 {
   font-style: italic;
   line-height: 1.2em;
   letter-spacing: -3px;
+  margin: .2em 0;
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 28px;
   font-family: 'Karla', serif;
   font-weight: 700;
   color: #333333;
-  line-height: .8em;
-  letter-spacing: -2.5px;
+  line-height: 1em;
+  letter-spacing: -2px;
+  margin: .3em 0;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Lora', serif;
   color: #333333;
   font-style: italic;
-  line-height: 1.2em;
-}
-
-h4 {
-  font-size: 16px;
-  font-family: 'Lora', serif;
-  color: #333333;
-  font-style: italic;
-  line-height: 1.2em;
-}
-
-.video-title {
-  margin-top: 1em;
-  margin-bottom: 2em;
-  padding: 0 2em;
-}
-
-.page-title {
-  font-size: 60px;
-  font-family: 'Lora', serif;
-  font-style: italic;
-  text-align: right;
-  line-height: .8em;
-  letter-spacing: -4.5px;
+  line-height: 1em;
+  margin: .6em 0;
 }
 
 .index-title {
@@ -109,11 +90,20 @@ h4 {
   letter-spacing: -7px;
 }
 
+.page-title {
+  font-size: 60px;
+  font-family: 'Lora', serif;
+  font-style: italic;
+  text-align: right;
+  line-height: .8em;
+  letter-spacing: -4.5px;
+}
+
 .link-list{
   a{
-    display: inline-block;
     color: #333333;
     text-decoration: none;
+    display: inline-block;
     &:hover {
       color: inherit;
       text-decoration: none;
@@ -122,32 +112,40 @@ h4 {
   }
 }
 
+.video-text {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0 2em;
+}
+
 .writing {
-  font-size: 15px;
+  font-size: 16px;
   font-family: 'Karla', sans-serif;
   color: #333333;
   line-height: 1.5em;
+  margin: .2em 0;
 }
 
 // header
 .menu {
-  color: white !important;
-  background: #ee4000;
+  background-color: inherit;
+  border: 1px solid #ee4000;
+  border-radius: 4px;
   display: inline-block;
-  padding: 0 .5em 1px .5em;
-  border-radius: 5px;
+  padding: 0em .5em 0em .5em;
 }
 
 .navigation {
   width: 100%;
   background: #fff;
   display: inline-block;
-  text-align: center;
   line-height: 20px;
+  text-align: center;
+  padding: .4em 0 .4em 0;
   a{
     color: #333333;
-    text-decoration: none;
-    padding: 0 .5em 0 .5em;
+    text-decoration: underline dashed #ee4000;
+    padding: 0 .5em;
     &:hover {
       color: inherit;
       text-decoration: none;
@@ -157,9 +155,9 @@ h4 {
 }
 
 .navigation-content {
-  height: 20px;
   background: #fff;
   display: none;
+  padding: .4em 0 0 0;
 }
 
 .navigation:hover .navigation-content {
@@ -168,40 +166,53 @@ h4 {
 
 // footer
 .footer {
-  height: 20px;
   width: 100%;
   background: #fff;
   display: inline-block;
   text-align: center;
+  padding: .2em 0;
 }
 
-// mobile 
+// mobile
 @media (max-width: 650px) {
+
+  .index-title {
+    text-align: center;
+    font-size: 90px;
+    line-height: .7em;
+    letter-spacing: -7px;
+  }
+
   .page-title {
     text-align: center;
   }
-  .index-title {
-    text-align: center;
-  }
+
   .video-title {
     font-size: 12px;
   }
-  .navigation {
+
+  .writing{
     font-size: 14px;
-    line-height: 30px;
   }
-  .navigation-content {
-    height: 30px;
-  }
-  .link-list {
-    text-align: center;
-    margin: 1em;
-    font-size: 14px;
-    a {
-      margin: .3em 0;
-    }
-  }
+
   .menu {
     font-size: 16px;
+  }
+
+  .navigation {
+    font-size: 16px;
+  }
+
+  .navigation-content {
+    height: 25px;
+  }
+
+  .link-list {
+    font-size: 14px;
+    text-align: center;
+    margin: .8em 0 0 0;
+    a {
+      margin: .8em 0 0 0;
+    }
   }
 }
