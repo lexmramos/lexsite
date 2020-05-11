@@ -1,48 +1,20 @@
-// bootstrap, partials
+// site-wide styles
+
 .container-fluid {
   height: 100%;
+  overflow-y: auto;
 }
 
-.row{
-  height: 100%;
-  justify-content: center;
+.with-navigation {
+  padding: 3em 0 1.5em 0;
 }
 
-.navigation {
-  height: 20px;
-  width: 100%;
-  background: #fff;
-  display: inline-block;
-  text-align: center;
-  line-height: 20px;
-  a{
-    color: #333333;
-    text-decoration: none;
-    padding: 0 .5em 0 .5em;
-    &:hover {
-      color: inherit;
-      text-decoration: none;
-      filter: opacity(.5);
-    }
-  }
+.content-margin {
+  margin: 3em 0;
 }
 
-.navigation-content {
-  height: 20px;
-  background: #fff;
-  display: none;
-}
-
-.navigation:hover .navigation-content {
-  display: block;
-}
-
-.footer {
-  height: 20px;
-  width: 100%;
-  background: #fff;
-  display: inline-block;
-  text-align: center;
+.content-row {
+  min-height: 100%;
 }
 
 // images
@@ -53,10 +25,10 @@ img {
 .img-fiona{
   max-width: 35%;
   max-height: 35%;
-  padding: .4em .8em 0em .5em;
+  padding: 0 .8em 0 .4em;
 }
 
-// general body and text
+// body and text
 body {
   height: 100vh;
   display: flex;
@@ -68,8 +40,8 @@ body {
 }
 
 a {
-  color: #ee4000;
-  text-decoration: none;
+  color: #333333;
+  text-decoration: underline dashed #ee4000;
   &:hover {
     color: inherit;
     text-decoration: none;
@@ -77,50 +49,41 @@ a {
   }
 }
 
-b, i {
-  color: #ee4000;
+.red {
+  color: #ee4000 !important;
 }
 
 h1 {
   font-family: 'Lora', serif;
   font-size: 50px;
-  color: #ee4000;
   font-style: italic;
   line-height: 1.2em;
   letter-spacing: -3px;
+  margin: .2em 0;
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 28px;
   font-family: 'Karla', serif;
   font-weight: 700;
   color: #333333;
-  line-height: .8em;
-  letter-spacing: -2.5px;
+  line-height: 1em;
+  letter-spacing: -2px;
+  margin: .3em 0;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Lora', serif;
   color: #333333;
   font-style: italic;
-  line-height: 1.2em;
+  line-height: 1em;
+  margin: .6em 0;
 }
 
-h4 {
-  font-size: 16px;
-  font-family: 'Lora', serif;
-  color: #333333;
-  font-style: italic;
-  line-height: 1.2em;
-}
-
-
-// page specific text styling
 .index-title {
   font-size: 100px;
   font-family: 'Lora', serif;
-  color: #ee4000;
   font-style: italic;
   text-align: right;
   line-height: .6em;
@@ -130,28 +93,126 @@ h4 {
 .page-title {
   font-size: 60px;
   font-family: 'Lora', serif;
-  color: #ee4000;
   font-style: italic;
   text-align: right;
   line-height: .8em;
   letter-spacing: -4.5px;
 }
 
-.writing {
-  font-size: 15px;
-  font-family: 'Karla', sans-serif;
-  color: #333333;
-  line-height: 1.5em;
-}
-
 .link-list{
   a{
     color: #333333;
     text-decoration: none;
+    display: inline-block;
     &:hover {
       color: inherit;
       text-decoration: none;
       filter: opacity(.5);
+    }
+  }
+}
+
+.video-text {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0 2em;
+}
+
+.writing {
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  color: #333333;
+  line-height: 1.5em;
+  margin: .2em 0;
+}
+
+// header
+.menu {
+  background-color: inherit;
+  border: 1px solid #ee4000;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 0em .5em 0em .5em;
+}
+
+.navigation {
+  width: 100%;
+  background: #fff;
+  display: inline-block;
+  line-height: 20px;
+  text-align: center;
+  padding: .4em 0 .4em 0;
+  a{
+    color: #333333;
+    text-decoration: underline dashed #ee4000;
+    padding: 0 .5em;
+    &:hover {
+      color: inherit;
+      text-decoration: none;
+      filter: opacity(.5);
+    }
+  }
+}
+
+.navigation-content {
+  background: #fff;
+  display: none;
+  padding: .4em 0 0 0;
+}
+
+.navigation:hover .navigation-content {
+  display: block;
+}
+
+// footer
+.footer {
+  width: 100%;
+  background: #fff;
+  display: inline-block;
+  text-align: center;
+  padding: .2em 0;
+}
+
+// mobile
+@media (max-width: 650px) {
+
+  .index-title {
+    text-align: center;
+    font-size: 90px;
+    line-height: .7em;
+    letter-spacing: -7px;
+  }
+
+  .page-title {
+    text-align: center;
+  }
+
+  .video-title {
+    font-size: 12px;
+  }
+
+  .writing{
+    font-size: 14px;
+  }
+
+  .menu {
+    font-size: 16px;
+  }
+
+  .navigation {
+    font-size: 16px;
+  }
+
+  .navigation-content {
+    height: 25px;
+  }
+
+  .link-list {
+    font-size: 14px;
+    text-align: center;
+    margin: .8em 0 0 0;
+    a {
+      margin: .8em 0 0 0;
     }
   }
 }
