@@ -17,15 +17,19 @@
   min-height: 100%;
 }
 
-// images
+// images & media
 img {
   width: 100%;
 }
 
-.img-fiona{
-  max-width: 35%;
-  max-height: 35%;
-  margin: .4em 1em 0 .4em;
+figure {
+  max-width: 75%;
+  max-height: 75%;
+  margin: 1.4em 0 1.6em 0;
+}
+
+.writing-media{
+  margin: 1.4em 0 1.6em 0;
 }
 
 // body and text
@@ -81,6 +85,11 @@ h3 {
   margin: .6em 0;
 }
 
+blockquote {
+  margin: 1.4em 6em;
+  font-style: italic;
+}
+
 .index-title {
   font-size: 100px;
   font-family: 'Lora', serif;
@@ -129,9 +138,11 @@ h3 {
   text-indent: 6em;
 }
 
-blockquote {
-  margin: 1em 5em;
+.disclaimer {
+  color: #777777;
   font-style: italic;
+  text-align: center;
+  margin: 1em;
 }
 
 // header
@@ -185,7 +196,7 @@ blockquote {
 @media (max-width: 650px) {
 
   .with-navigation {
-    padding: 4em 0 2em 0;
+    margin: 4em 0 2em 0;
   }
 
   .index-title {
@@ -199,8 +210,8 @@ blockquote {
     text-align: center;
   }
 
-  .video-title {
-    font-size: 12px;
+  .video-text {
+    font-size: 14px;
   }
 
   .writing{
