@@ -199,6 +199,7 @@ DEPENDENCIES
   actionpack (~> 5.2.4.3)
   actionview (~> 5.2.4.3)
   activesupport (~> 5.2.4.3)
+  autoprefixer-rails (~> 9.8)
   bootstrap (~> 4.4.1)
   foreman (~> 0.87)
   kramdown (~> 2.3.0)
