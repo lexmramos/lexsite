@@ -256,10 +256,6 @@ figure {
   margin: 1em 0 0 0;
 }
 
-.video {
-  margin: 1em 0;
-}
-
 // responsive video solution from Praxis Ashelin
 // https://stackoverflow.com/questions/28340625/
 .videoWrapper {
@@ -267,7 +263,6 @@ figure {
   padding-bottom: 56.25%; /* 16:9 ratio */
   padding-top: 25px;
   height: 0;
-  margin: 1.4em 0 1.6em 0;
 }
 
 .videoWrapper iframe {
@@ -318,8 +313,7 @@ figure {
   .content-row {
     min-height: 100%;
     overflow-y: scroll;
-    padding: 3.5em 0 2em 0;
-    margin: 0;
+    padding: 5em 0 2.5em 0;
   }
 
   .navigation, .footer {
@@ -358,13 +352,14 @@ figure {
     font-size: 90px;
     line-height: .9em;
     letter-spacing: -3px;
-    margin: 0;
+    margin: .2em 0;
     padding: 0;
   }
 
   .page-title {
     font-size: 60px;
     text-align: center;
+    margin: .2em 0;
   }
 
   .year-list {
