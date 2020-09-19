@@ -1,4 +1,6 @@
 require 'middleman/rack'
+require "rack/contrib/try_static"
+
 run Middleman.server
 
 module Rack
@@ -27,10 +29,10 @@ use Rack::Deflater
 use Rack::TryStatic,
   root: 'build',
   urls: %w(/),
-  try:  %w(
+  try: %w(
     .html index.html /index.html
     .xml  index.xml  /index.xml
-  )
+    ),
   cache_control: 'public, max-age=2592000'
 
 # Run your own Rack app here or use this one to serve 404 messages:
