@@ -24,7 +24,7 @@ module Rack
 end
 
 use Rack::Deflater
-use Rack::TryStatic, {
+use Rack::TryStatic,
   root: 'build',
   urls: %w(/),
   try:  %w(
@@ -32,7 +32,6 @@ use Rack::TryStatic, {
     .xml  index.xml  /index.xml
   )
   cache_control: 'public, max-age=2592000'
-}
 
 # Run your own Rack app here or use this one to serve 404 messages:
 run lambda { |env|
