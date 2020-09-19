@@ -4,6 +4,7 @@ activate :autoprefixer do |prefix|
 end
 
 activate :directory_indexes
+set :trailing_slash, false
 activate :asset_hash
 activate :livereload
 configure :build do
