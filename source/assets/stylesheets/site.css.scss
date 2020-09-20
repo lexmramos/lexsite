@@ -7,7 +7,7 @@
 .content-row {
   min-height: 100%;
   overflow-y: auto;
-  padding: 2em 0;
+  padding: 3em 0;
   margin: 0;
 }
 
@@ -20,7 +20,7 @@
   width: 100%;
   background: #fff;
   border-bottom: 1px solid #ee4000;
-  font-size: 12px;
+  font-size: 14px;
   text-align: left;
   text-transform: uppercase;
   padding: .4em 0;
@@ -44,7 +44,7 @@
   width: 100%;
   background: #fff;
   border-top: 1px solid #ee4000;
-  font-size: 12px;
+  font-size: 14px;
   text-align: right;
   text-transform: uppercase;
   padding: .4em 0;
@@ -169,23 +169,32 @@ figcaption {
 
 .index-title {
   font-family: 'alte_haas_groteskbold';
-  font-size: 100px;
-  text-align: right;
+  font-size: 82px;
+  text-align: center;
   text-transform: uppercase;
-  line-height: .8em;
+  line-height: 1em;
   letter-spacing: -2.5px;
 }
 
 .page-title {
   font-family: 'alte_haas_groteskregular';
-  font-size: 72px;
+  font-size: 68px;
   text-align: right;
   letter-spacing: -3px;
+  line-height: 1em;
+}
+
+.sub-title {
+  font-family: 'alte_haas_groteskregular';
+  font-size: 48px;
+  text-align: center;
+  text-transform: lowercase;
+  line-height: 1em;
 }
 
 .year-list {
   font-family: 'alte_haas_groteskregular';
-  font-size: 100px;
+  font-size: 82px;
   text-align: right;
   letter-spacing: -4px;
 }
@@ -193,11 +202,13 @@ figcaption {
 .link-list{
   font-family: 'alte_haas_groteskregular';
   font-size: 26px;
-  text-transform: uppercase;
-  line-height: inherit;
+  text-align: center;
+  text-transform: lowercase;
+  padding: .3em 0;
+  line-height: 1em;
   a{
     color: #333333;
-    text-decoration: none;
+    text-decoration: underline #ee4000;
     display: inline-block;
     &:hover {
       color: inherit;
@@ -304,6 +315,43 @@ figure {
   max-height: 35%;
   margin-top: 0;
   margin-left: 1.2em;
+}
+
+//contact form
+.contact-form {
+  border-radius: 5px;
+  label {
+    font-family: 'alte_haas_groteskregular';
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: lowercase;
+    line-height: 1em; 
+    color: #ee4000;
+  }
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  margin: 0 0 1.2em 0;
+  padding: .8em;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #ee4000;
+  color: #fff;
+  padding: .5em 1em;
+  border: none;
+  border-radius: 4px;
+  text-transform: lowercase;
+}
+
+input[type=submit]:hover {
+  filter: opacity(.5);
+  cursor: pointer;
 }
 
 // mobile
