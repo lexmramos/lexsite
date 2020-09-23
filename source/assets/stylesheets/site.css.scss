@@ -37,7 +37,7 @@
   font-size: 14px;
   text-align: left;
   text-transform: uppercase;
-  padding: .4em 0;
+  padding: .5em 0;
   a{
     text-decoration: none;
     &:hover {
@@ -55,19 +55,28 @@
 
 // footer
 .footer {
+  display: flex;
   width: 100%;
   background: #fff;
   border-top: 1px solid #ee4000;
   font-size: 14px;
-  text-align: right;
   text-transform: uppercase;
-  padding: .4em 0;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.footer-content {
-  padding: 0 1em;
+.copy {
+  margin: 0;
+  padding: 0 .8em;
 }
 
+.social{
+  font-size: 28px;
+  margin: 0;
+  padding: 0 .5em;
+}
+
+// everything else
 body {
   height: 100vh;
   display: flex;
@@ -195,28 +204,22 @@ figcaption {
   }
 }
 
-.social{
-  text-align: center;
-  text-transform: lowercase;
-  padding: 0;
-  margin: 1em 0;
-}
-
 .button {
   display: inline-block;
-  max-width: 50%;
+  max-width: 100%;
   background-color: #ee4000;
   color: #fff;
   text-align: center;
   text-decoration: none;
   word-wrap: break-word;
   border: 1px solid #ee4000;
-  border-radius: 10px;
-  margin: 2em 0 1.5em 0;
+  border-radius: 8px;
+  margin: 1em 0;
   padding: 1em 2em;
   &:hover {
     color: #ee4000;
     background: #fff;
+    text-decoration: none;
     border: 1px solid #ee4000;
     filter: opacity(1);
   }
@@ -333,20 +336,40 @@ figure {
     min-height: 100%;
     overflow-y: scroll;
     margin: 0;
-    padding: 5em 0 2.5em 0;
+    padding: 4em 0 3.5em 0;
   }
 
-  .navigation, .footer {
-    font-size: 16px;
+ .navigation {
+   font-size: 14px;
+   padding: .8em 1em;
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .nav-content {
+    padding: 0;
+ }
+
+ .footer {
+    font-size: 14px;
+    padding: .2em 0;
+  }
+
+  .copy {
+    padding: 0 .8em;
+  }
+
+  .social {
+    padding: 0 .5em;
   }
 
   .video {
-    margin-top: .2em;
+    margin-top: .4em;
   }
 
   body {
     height: 100%;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   h1 {
@@ -396,11 +419,24 @@ figure {
     padding: 0;
   }
 
-  .social {
-    margin: auto;
-    margin-top: .8em;
-    a {
-      margin-top: .8em;
+  .button {
+    display: inline-block;
+    max-width: 100%;
+    background-color: #ee4000;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    word-wrap: break-word;
+    border: 1px solid #ee4000;
+    border-radius: 8px;
+    margin: 1em 0;
+    padding: 1em 2em;
+    &:hover {
+      color: #ee4000;
+      background: #fff;
+      text-decoration: none;
+      border: 1px solid #ee4000;
+      filter: opacity(1);
     }
   }
 
