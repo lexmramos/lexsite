@@ -32,9 +32,10 @@
 // header
 .navigation {
   width: 100%;
-  background: #fff;
-  border-bottom: 1px solid #ee4000;
-  font-size: 14px;
+  font-family: 'alte_haas_groteskbold';
+  font-size: 16px;
+  background: #F7F7F9;
+  border-bottom: 1px solid #4D6CFA;
   text-align: left;
   text-transform: uppercase;
   padding: .5em 0;
@@ -57,10 +58,9 @@
 .footer {
   display: flex;
   width: 100%;
-  background: #fff;
-  border-top: 1px solid #ee4000;
-  font-size: 14px;
-  text-transform: uppercase;
+  background: #F7F7F9;
+  border-top: 1px solid #4D6CFA;
+  font-size: 16px;
   justify-content: space-between;
   align-items: center;
 }
@@ -76,26 +76,36 @@
   padding: 0 .5em;
 }
 
+.social-link {
+  padding-left: .3em;
+}
+
 // everything else
 body {
   height: 100vh;
   display: flex;
   flex-flow: column;
-  font-size: 14px;
-  font-family: 'Helvetica', sans-serif;
-  color: #333333;
+  font-size: 16px;
+  font-family: acumin-pro, sans-serif;
+  // font-family: 'Helvetica', sans-serif;
+  background-color: #F7F7F9;
+  color: #353535;
+}
+
+b {
+  color: #E53D00;
 }
 
 a {
-  color: #333333;
-  text-decoration: underline #ee4000;
+  color: #353535;
+  text-decoration: underline #E53D00;
   &:hover {
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     color: inherit;
-    text-decoration: underline #ee4000;
+    text-decoration: inherit;
     filter: opacity(.5);
   }
 }
@@ -114,22 +124,22 @@ h1 {
 }
 
 h2 {
-  font-family: 'alte_haas_groteskregular';
+  font-family: 'alte_haas_groteskbold';
   font-size: 32px;
-  color: #333;
   text-transform: uppercase;
   line-height: .8em;
   margin: .2em 0;
 }
 
 h3 {
-  font-family: 'alte_haas_groteskregular';
+  font-family: 'alte_haas_groteskbold';
   font-size: 26px;
   text-transform: uppercase;
   line-height: 1em;
   margin-bottom: .1em;
 }
 
+//for video text only
 h4 {
   font-family: 'alte_haas_groteskregular';
   font-size: 20px;
@@ -157,11 +167,11 @@ li {
 
 li:before {
   content: "#";
-  color: #ee4000;
+  color: #E53D00;
 }
 
 figcaption {
-  color: #777777;
+  color: #353535;
   font-size: 12px;
   text-align: center;
   line-height: 1.6em;
@@ -172,7 +182,15 @@ figcaption {
 }
 
 .red {
-  color: #ee4000 !important;
+  color: #E53D00 !important;
+}
+
+.blue {
+  color: #4D6CFA !important;
+}
+
+.yellow {
+  color: #F6AA1C !important;
 }
 
 .index-title {
@@ -195,7 +213,7 @@ figcaption {
   line-height: inherit;
   padding: 3em 0;
   a{
-    color: #333333;
+    color: #353535;
     display: inline-block;
     &:hover {
       color: inherit;
@@ -207,20 +225,20 @@ figcaption {
 .button {
   display: inline-block;
   max-width: 100%;
-  background-color: #ee4000;
-  color: #fff;
+  background-color: #E53D00;
+  color: #F7F7F9;
   text-align: center;
   text-decoration: none;
   word-wrap: break-word;
-  border: 1px solid #ee4000;
+  border: 1px solid #E53D00;
   border-radius: 8px;
   margin: 1em 0;
   padding: 1em 2em;
   &:hover {
-    color: #ee4000;
-    background: #fff;
+    color: #F6AA1C;
+    background: #F7F7F9;
     text-decoration: none;
-    border: 1px solid #ee4000;
+    border: 1px solid #F6AA1C;
     filter: opacity(1);
   }
 }
@@ -238,10 +256,6 @@ figcaption {
   background-color: inherit;
 }
 
-.video {
-  margin-top: 1em;
-}
-
 .video-text {
   margin: 1em 0;
   padding: 0 1em;
@@ -249,20 +263,20 @@ figcaption {
 
 .writing {
   font-size: 16px;
-  color: #333333;
+  color: #353535;
   line-height: 1.8em;
 }
 
 // footnotes
 .note {
   font-size: 12px;
-  color: #777777;
-  border: 1px solid #ee4000;
+  color: #353535;
+  border: 1px solid #4D6CFA;
   border-radius: 4px;
   margin: 1em 4em;
   padding: 1em 2em;
   a{
-    color: #777777;
+    color: #353535;
   }
 }
 
@@ -276,6 +290,10 @@ figure {
   position: relative;
   display: inline-block;
   margin: 1em 0 0 0;
+}
+
+.video {
+  margin-top: 1em;
 }
 
 // responsive video solution from Praxis Ashelin
@@ -336,12 +354,12 @@ figure {
     min-height: 100%;
     overflow-y: scroll;
     margin: 0;
-    padding: 4em 0 3.5em 0;
+    padding: 3.5em 0 3em 0;
   }
 
  .navigation {
-   font-size: 14px;
-   padding: .8em 1em;
+   font-size: 16px;
+   padding: .5em 1em;
    display: flex;
    justify-content: space-between;
  }
@@ -351,16 +369,20 @@ figure {
  }
 
  .footer {
-    font-size: 14px;
+    font-size: 13px;
     padding: .2em 0;
   }
 
   .copy {
-    padding: 0 .8em;
+    padding: 0 .2em 0 .5em;
   }
 
   .social {
-    padding: 0 .5em;
+    padding-right: .5em;
+  }
+
+  .social-link {
+    padding-left: .25em;
   }
 
   .video {
@@ -369,7 +391,7 @@ figure {
 
   body {
     height: 100%;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   h1 {
@@ -401,41 +423,41 @@ figure {
 
   .index-title {
     text-align: center;
-    font-size: 90px;
-    line-height: .9em;
-    letter-spacing: -3px;
-    margin: .2em 0;
+    font-size: 45px;
+    letter-spacing: 0px;
     padding: 0;
+    line-height: 1em;
   }
 
   .year-list {
-    font-size: 72px;
-    letter-spacing: -3px;
-    text-align: center;
+    font-size: 50px;
+    letter-spacing: -1px;
+    text-align: left;
   }
 
   .writing-list {
-    line-height: 1.5em;
+    line-height: 2em;
     padding: 0;
+    margin-left: 3em;
   }
 
   .button {
     display: inline-block;
     max-width: 100%;
-    background-color: #ee4000;
-    color: #fff;
+    background-color: #E53D00;
+    color: #F7F7F9;
     text-align: center;
     text-decoration: none;
     word-wrap: break-word;
-    border: 1px solid #ee4000;
+    border: 1px solid #E53D00;
     border-radius: 8px;
     margin: 1em 0;
     padding: 1em 2em;
     &:hover {
-      color: #ee4000;
-      background: #fff;
+      color: #E53D00;
+      background: #F7F7F9;
       text-decoration: none;
-      border: 1px solid #ee4000;
+      border: 1px solid #E53D00;
       filter: opacity(1);
     }
   }
@@ -446,7 +468,7 @@ figure {
 
   .writing {
     font-size: 18px;
-    color: #333333;
+    color: #353535;
     line-height: 2em;
   }
 
