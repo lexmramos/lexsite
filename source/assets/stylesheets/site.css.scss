@@ -81,8 +81,12 @@ a {
   color: #333333;
   text-decoration: underline #ee4000;
   &:hover {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
     color: inherit;
-    text-decoration: none;
+    text-decoration: underline #ee4000;
     filter: opacity(.5);
   }
 }
@@ -186,29 +190,16 @@ figcaption {
     display: inline-block;
     &:hover {
       color: inherit;
-      text-decoration: none;
       filter: opacity(.5);
     }
   }
 }
 
 .social{
-  font-family: 'alte_haas_groteskregular';
-  font-size: 26px;
   text-align: center;
   text-transform: lowercase;
-  padding: .3em 0;
-  line-height: 1em;
-  a{
-    color: #333333;
-    text-decoration: underline #ee4000;
-    display: inline-block;
-    &:hover {
-      color: inherit;
-      text-decoration: none;
-      filter: opacity(.5);
-    }
-  }
+  padding: 0;
+  margin: 1em 0;
 }
 
 .button {
@@ -221,7 +212,7 @@ figcaption {
   word-wrap: break-word;
   border: 1px solid #ee4000;
   border-radius: 10px;
-  margin-top: .5em;
+  margin: 2em 0 1.5em 0;
   padding: 1em 2em;
   &:hover {
     color: #ee4000;
@@ -232,17 +223,15 @@ figcaption {
 }
 
 .hvr-fade {
+  overflow: hidden;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  overflow: hidden;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-property: color, background-color;
-  transition-property: color, background-color;
 }
 
-.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+.hvr-fade:hover, .hvr-icon-fade:hover, .hvr-fade:focus, .hvr-fade:active {
   background-color: inherit;
 }
 
@@ -408,7 +397,7 @@ figure {
   }
 
   .social {
-    text-align: center;
+    margin: auto;
     margin-top: .8em;
     a {
       margin-top: .8em;
