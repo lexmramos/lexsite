@@ -6,9 +6,10 @@
 
 .content-row {
   min-height: 100%;
-  overflow-y: auto;
-  padding: 3em 0;
+  padding-top: 80px;
+  padding-bottom: 60px;
   margin: 0;
+  overflow-y: auto;
 }
 
 @font-face {
@@ -31,14 +32,17 @@
 
 // header
 .navigation {
+  display: flex;
   width: 100%;
-  font-family: 'alte_haas_groteskbold';
-  font-size: 16px;
+  justify-content: space-between;
+  align-items: center;
   background: #F7F7F9;
   border-bottom: 1px solid #4D6CFA;
-  text-align: left;
-  text-transform: uppercase;
   padding: .5em 0;
+  font-family: 'alte_haas_groteskbold';
+  font-size: 16px;
+  text-transform: lowercase;
+  padding: .5em 1em;
   a{
     text-decoration: none;
     &:hover {
@@ -49,9 +53,16 @@
   }
 }
 
-.nav-content {
-  display: inline-block;
-  padding: 0 1em;
+.navi-title {
+  font-size: 32px;
+}
+
+.navi-content {
+  margin: 0;
+}
+
+.navi-link {
+  padding-left: 1em;
 }
 
 // footer
@@ -63,21 +74,20 @@
   font-size: 16px;
   justify-content: space-between;
   align-items: center;
+  padding: .2em 1em;
 }
 
 .copy {
   margin: 0;
-  padding: 0 .8em;
 }
 
 .social{
   font-size: 28px;
   margin: 0;
-  padding: 0 .5em;
 }
 
 .social-link {
-  padding-left: .3em;
+  padding-right: .5em;
 }
 
 // everything else
@@ -87,13 +97,8 @@ body {
   flex-flow: column;
   font-size: 16px;
   font-family: acumin-pro, sans-serif;
-  // font-family: 'Helvetica', sans-serif;
   background-color: #F7F7F9;
   color: #353535;
-}
-
-b {
-  color: #E53D00;
 }
 
 a {
@@ -196,8 +201,6 @@ figcaption {
 .index-title {
   font-family: 'alte_haas_groteskbold';
   font-size: 82px;
-  text-align: center;
-  text-transform: uppercase;
   line-height: 1em;
   letter-spacing: -2px;
 }
@@ -225,12 +228,12 @@ figcaption {
 .button {
   display: inline-block;
   max-width: 100%;
-  background-color: #E53D00;
+  background-color: #4D6CFA;
   color: #F7F7F9;
   text-align: center;
   text-decoration: none;
   word-wrap: break-word;
-  border: 1px solid #E53D00;
+  border: 1px solid #4D6CFA;
   border-radius: 8px;
   margin: 1em 0;
   padding: 1em 2em;
@@ -352,7 +355,6 @@ figure {
   
   .content-row {
     min-height: 100%;
-    overflow-y: scroll;
     margin: 0;
     padding: 3.5em 0 3em 0;
   }
@@ -364,7 +366,7 @@ figure {
    justify-content: space-between;
  }
 
- .nav-content {
+ .navi-content {
     padding: 0;
  }
 
