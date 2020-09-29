@@ -36,7 +36,7 @@
   align-items: center;
   background: #F7F7F9;
   border-bottom: 1px solid #BCBCBC;
-  padding: 1em 4em;
+  padding: 2em 4em;
   a{
     text-decoration: none;
     &:hover {
@@ -50,6 +50,7 @@
 .navi-title {
   font-family: 'alte_haas_groteskbold';
   font-size: 48px;
+  line-height: 1em;
 }
 
 .navi-content {
