@@ -268,7 +268,6 @@ figcaption {
 
 // footnotes
 .note {
-  font-size: 12px;
   color: #BCBCBC;
   border: 1px solid #BCBCBC;
   border-radius: 4px;
@@ -343,7 +342,7 @@ figure {
 
 // mobile
 @media (max-width: 765px) {
-  .content-row {
+ .content-row {
     margin: 0 .25em;
     padding: 1em 0;
   }
@@ -373,93 +372,92 @@ figure {
     align-items: center;
   }
 
-  .copy {
+ .copy {
     margin: 0;
   }
   
-  .social{
+ .social{
     font-size: 24px;
     margin: 0;
   }
   
-  .social-link {
+ .social-link {
     padding-right: .5em;
   }
 
-  .video {
+ .video {
     margin-top: .4em;
   }
 
-  h1 {
+ h1 {
     font-size: 42px;
     line-height: 1em;
     letter-spacing: -1px;
     margin: 0;
   }
 
-  h2 {
+ h2 {
     font-size: 30px;
     line-height: 1em;
     letter-spacing: -.5px;
     margin: .2em 0;
   }
 
-  h3 {
+ h3 {
     font-size: 24px;
     line-height: 1em;
   }
 
-  blockquote {
+ blockquote {
     margin: 1em 2em;
   }
 
-  p {
+ p {
     padding-top: .5em;
   }
 
-  li {
+ li {
     padding-left: .5em;
   }
 
-  .index-title {
+ .index-title {
     font-size: 45px;
     letter-spacing: 0px;
   }
 
-  .year-list {
+ .year-list {
     font-size: 50px;
     letter-spacing: -1px;
     text-align: left;
   }
 
-  .writing-list {
+ .writing-list {
     line-height: 2em;
     padding: 0;
     margin-left: 3em;
   }
 
-  .button {
+ .button {
     margin: .5em 0;
     padding: 1.5em;
   }
 
-  .video-text {
+ .video-text {
     line-height: 1em;
   }
 
-  .writing {
+ .writing {
     font-size: 18px;
     color: #353535;
     line-height: 2em;
   }
 
-  .note {
-    font-size: 16px;
+ .note {
     margin: 1em;
     padding: 1em;
   }
 
-  .val{
+ .val{
     margin-top: 0;
     margin-left: .5em;
   }
