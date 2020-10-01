@@ -49,8 +49,9 @@
 
 .navi-title {
   font-family: 'alte_haas_groteskbold';
-  font-size: 48px;
-  line-height: 1em;
+  font-size: 50px;
+  line-height: .8em;
+  text-transform: lowercase;
 }
 
 .navi-content {
@@ -121,17 +122,17 @@ a {
 h1 {
   font-family: 'alte_haas_groteskbold';
   font-size: 50px;
-  text-transform: uppercase;
   line-height: .8em;
   letter-spacing: -1px;
   margin: .2em 0;
+  text-transform: lowercase;
 }
 
 h2 {
   font-family: 'alte_haas_groteskbold';
   font-size: 32px;
-  text-transform: uppercase;
   line-height: .8em;
+  text-transform: lowercase;
 }
 
 h3 {
@@ -204,7 +205,6 @@ figcaption {
 .year-list {
   font-family: 'alte_haas_groteskregular';
   font-size: 82px;
-  text-align: right;
   letter-spacing: -4px;
 }
 
@@ -260,12 +260,15 @@ figcaption {
 }
 
 .writing {
-  line-height: 2.5em;
+  line-height: 2em;
   p {
     padding: 1em 0;
   }
 }
 
+.space-below {
+  padding: 0 0 1.5em 0;
+}
 // footnotes
 .note {
   color: #BCBCBC;
@@ -449,7 +452,7 @@ figure {
  .writing {
     font-size: 18px;
     color: #353535;
-    line-height: 2em;
+    line-height: 1.5em;
   }
 
  .note {
