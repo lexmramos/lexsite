@@ -51,6 +51,7 @@
   font-family: 'alte_haas_groteskbold';
   font-size: 50px;
   line-height: .8em;
+  letter-spacing: -1px;
   text-transform: lowercase;
 }
 
@@ -165,6 +166,7 @@ ul {
 
 li {
   padding-left: 1em;
+  word-wrap: break-word;
 }
 
 li:before {
@@ -206,6 +208,7 @@ figcaption {
   font-family: 'alte_haas_groteskregular';
   font-size: 82px;
   letter-spacing: -4px;
+  text-align: right;
 }
 
 .writing-list{
