@@ -8,7 +8,7 @@
 }
 
 .content-row {
-  padding: 1.5em;
+  padding: 2em 1em;
   flex: 1 0 auto;
 }
 
@@ -36,7 +36,7 @@
   align-items: center;
   background: #F7F7F9;
   border-bottom: 1px solid #BCBCBC;
-  padding: 2em 4em;
+  padding: 2.5em 4em;
   a{
     text-decoration: none;
     &:hover {
@@ -125,7 +125,6 @@ h1 {
   font-size: 50px;
   line-height: .8em;
   letter-spacing: -1px;
-  margin: .2em 0;
   text-transform: lowercase;
 }
 
@@ -277,8 +276,8 @@ figcaption {
   color: #BCBCBC;
   border: 1px solid #BCBCBC;
   border-radius: 4px;
-  margin: 1em 4em;
   padding: 1em 2em;
+  margin: 0 2em 1em 2em;
   a{
     color: inherit;
   }
