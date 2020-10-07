@@ -299,6 +299,25 @@ figure {
   margin-top: 1em;
 }
 
+.speakerdeck {
+  width: 100%;
+  height: 0;
+  padding-right: 1em;
+  padding-left: 1em;
+  position: relative;
+  padding-bottom: 42.8169%;
+}
+
+.speakerdeck-if {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 1px solid #BCBCBC;
+  border-radius: 8px;
+}
+
 // responsive video solution from Praxis Ashelin
 // https://stackoverflow.com/questions/28340625/
 .videoWrapper {
