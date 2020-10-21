@@ -159,7 +159,7 @@ blockquote {
 
 ul {
   list-style: none;
-  padding: 0 0 1em 0;
+  padding: 0 0 2em 1em;
   margin: 0;
 }
 
@@ -212,7 +212,7 @@ figcaption {
 
 .writing-list{
   line-height: inherit;
-  padding: 3em 0;
+  padding-top: 2em;
   a{
     color: #353535;
     display: inline-block;
@@ -293,6 +293,11 @@ figure {
   position: relative;
   display: inline-block;
   margin: 1em 0 0 0;
+}
+
+.port-img {
+  margin-bottom: 2em;
+  border: 1px solid #BCBCBC;
 }
 
 .video {
