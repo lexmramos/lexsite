@@ -71,7 +71,7 @@
   width: 100%;
   background: #F7F7F9;
   border-top: 1px solid #BCBCBC;
-  font-size: 16px;
+  font-size: 18px;
   justify-content: space-between;
   align-items: center;
   padding: 2em 4em;
@@ -80,6 +80,7 @@
 
 .copy {
   margin: 0;
+  color: #BCBCBC;
   text-align: right;
 }
 
@@ -98,7 +99,7 @@ body {
   width: 100vw;
   padding: 0;
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
   font-family: acumin-pro, sans-serif;
   background-color: #F7F7F9;
   color: #353535;
@@ -137,15 +138,14 @@ h2 {
 
 h3 {
   font-family: 'alte_haas_groteskbold';
-  font-size: 26px;
-  text-transform: uppercase;
+  font-size: 24px;
   line-height: 1em;
+  text-transform: lowercase;
 }
 
-//for video text only
 h4 {
-  font-size: 22px;
-  line-height: 2em;
+  font-size: 20px;
+  line-height: 1em;
 }
 
 blockquote {
@@ -159,18 +159,20 @@ blockquote {
 
 ul {
   list-style: none;
-  padding: 0 0 2em 1em;
+  padding: 0;
   margin: 0;
 }
 
 li {
-  padding-left: 1em;
-  word-wrap: break-word;
+  position: relative;
+  overflow-wrap: break-word;
 }
 
 li:before {
-  content: "#";
-  color: #E53D00;
+  content: "→ ";
+  position: absolute;
+  left: -1.5em;
+  display: none;
 }
 
 figcaption {
@@ -182,6 +184,12 @@ figcaption {
   a{
     color: inherit;
   }
+}
+
+hr {
+  display: block;
+  border-top: 1px solid #BCBCBC !important;
+  margin: 2em 0;
 }
 
 .red {
@@ -196,38 +204,13 @@ figcaption {
   color: #F6AA1C !important;
 }
 
-.index-title {
-  font-family: 'alte_haas_groteskbold';
-  font-size: 82px;
-  line-height: 1em;
-  letter-spacing: -2px;
-}
-
-.year-list {
-  font-family: 'alte_haas_groteskregular';
-  font-size: 82px;
-  letter-spacing: -4px;
-  text-align: right;
-}
-
-.writing-list{
-  line-height: inherit;
-  padding-top: 2em;
-  a{
-    color: #353535;
-    display: inline-block;
-    &:hover {
-      color: inherit;
-      filter: opacity(.5);
-    }
-  }
-}
-
 .button {
   display: inline-block;
   max-width: 100%;
   background-color: #E53D00;
   color: #F7F7F9;
+  font-family: 'alte_haas_groteskbold';
+  font-size: 24px;
   text-align: center;
   text-decoration: none;
   word-wrap: break-word;
@@ -257,10 +240,6 @@ figcaption {
   background-color: inherit;
 }
 
-.video-text {
-  padding: 1em;
-}
-
 .writing {
   line-height: 2em;
   p {
@@ -268,8 +247,12 @@ figcaption {
   }
 }
 
+.anim-title {
+  padding-top: .5em;
+}
+
 .space-below {
-  padding: 0 0 1.5em 0;
+  padding: 0 0 1em 0;
 }
 
 // footnotes
@@ -376,20 +359,18 @@ figure {
   }
 
  .navigation {
-   font-size: 16px;
    padding: 1em 0; 
    flex-wrap: wrap;
    justify-content: center;
  }
 
- .navi-title {
-   display: none;
-   font-size: 18px;
+ .navi-content {
+   font-size: 20px;
  }
 
- .navi-content {
-   font-size: 18px;
- }
+ .navi-title {
+   display: none;
+  }
 
  .navi-link {
    padding: 0 .8em;
@@ -418,72 +399,63 @@ figure {
   }
 
  h1 {
-    font-size: 42px;
+    font-size: 36px;
     line-height: 1em;
-    letter-spacing: -1px;
+    letter-spacing: 0px;
     margin: 0;
   }
 
  h2 {
-    font-size: 30px;
+    font-size: 24px;
     line-height: 1em;
-    letter-spacing: -.5px;
-    margin: .2em 0;
+    letter-spacing: 0px;
+    margin: .5em 0;
   }
 
  h3 {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1em;
   }
-
+  
  blockquote {
     margin: 1em 2em;
   }
 
  p {
-    padding-top: .5em;
-  }
-
- li {
-    padding-left: .5em;
-  }
-
- .index-title {
-    font-size: 45px;
-    letter-spacing: 0px;
-  }
-
- .year-list {
-    font-size: 50px;
-    letter-spacing: -1px;
-    text-align: left;
-  }
-
- .writing-list {
-    line-height: 2em;
     padding: 0;
-    margin-left: 3em;
+    margin-bottom: .5em;
   }
+
+ ul {
+  padding: 0 0 0 1em;
+  line-height: 1.8em;
+ }
+
+ hr {
+   margin: 1.5em 0;
+ }
 
  .button {
     margin: .5em 0;
     padding: 1.5em;
   }
 
- .video-text {
-    line-height: 1em;
+ .space-below {
+    padding: 0 0 1.5em 0;
   }
 
  .writing {
-    font-size: 18px;
-    color: #353535;
-    line-height: 1.5em;
+    line-height: 2em;
   }
+
+ .publications {
+    display: none;
+ }
 
  .note {
     margin: 1em;
     padding: 1em;
-  }
+ }
 
  .val{
     margin-top: 0;
