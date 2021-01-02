@@ -1,12 +1,9 @@
-this is alex's personal website!
+Hi, this is Alex's personal website—built by me, for me.
 
-i'm using ruby v2.6.4. once you've got the project downloaded or pulled:
+I'm using Ruby v2.6.4. Once you've got the project downloaded or pulled:
 
-run ```bundle install```
-and then run ```middleman server```
+Run ```bundle install```, and then run ```middleman server```.
 
-you should be able to view it on localhost:4567 in your browser.
+After that, you should be able to view it on localhost:4567 in your browser.
 
-thanks to walker for always helping me clean up!
-
-:•)
+As always, thanks to Walker for design feedback and helping me tidy up.
