@@ -169,7 +169,6 @@ li {
 }
 
 li:before {
-  content: "→ ";
   position: absolute;
   left: -1.5em;
   display: none;
@@ -251,6 +250,10 @@ hr {
 
 .space-below {
   padding: 0 0 1em 0;
+}
+
+.round-corners {
+  border-radius: 10px;
 }
 
 // footnotes
