@@ -248,16 +248,20 @@ hr {
   padding-top: .5em;
 }
 
-.space-below {
-  padding: 0 0 1em 0;
+.space-below-sm {
+  margin-bottom: .5em;
+}
+
+.space-below-lg {
+  margin-bottom: 1.5em;
 }
 
 .space-above {
-  padding: .5em 0 0 0;
+  margin-top: .5em;
 }
 
-.round-corners {
-  border-radius: 10px;
+.rounded-corners {
+  border-radius: 8px;
 }
 
 // footnotes
@@ -443,10 +447,6 @@ figure {
  .button {
     margin: .5em 0;
     padding: 1.5em;
-  }
-
- .space-below {
-    padding: 0 0 1.5em 0;
   }
 
  .writing {
