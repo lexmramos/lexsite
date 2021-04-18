@@ -168,10 +168,15 @@ li {
   overflow-wrap: break-word;
 }
 
-li:before {
+.writing-links {
+  li:before {
   position: absolute;
   left: -1.5em;
-  display: none;
+  display: inline-block;
+  content: "–";
+  font-weight: bold;
+  color: #6572E8;
+  }
 }
 
 figcaption {
