@@ -109,7 +109,7 @@ body {
 
 a {
   color: #353535;
-  text-decoration: underline #E53D00;
+  text-decoration: underline 2px #6572E8;
   &:hover {
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -191,27 +191,19 @@ hr {
   margin: 2em 0;
 }
 
-.red {
-  color: #E53D00 !important;
-}
-
-.blue {
-  color: #4D6CFA !important;
-}
-
-.yellow {
-  color: #F6AA1C !important;
+.lilac {
+  color: #6572E8 !important;
 }
 
 .button {
   display: inline-block;
   max-width: 100%;
-  background-color: #E53D00;
+  background-color: #6572E8;
   color: #F7F7F9;
   text-align: center;
   text-decoration: none;
   word-wrap: break-word;
-  border: 1px solid #E53D00;
+  border: 1px solid #6572E8;
   border-radius: 8px;
   margin: .8em 0;
   padding: .8em 1em;
