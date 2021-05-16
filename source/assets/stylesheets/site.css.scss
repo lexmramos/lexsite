@@ -168,7 +168,7 @@ li {
   overflow-wrap: break-word;
 }
 
-.writing-links {
+.section-links {
   li:before {
   position: absolute;
   left: -1.5em;
@@ -372,6 +372,7 @@ figure {
 
  .navi-content {
    font-size: 20px;
+   letter-spacing: -1px;
  }
 
  .navi-title {
@@ -402,7 +403,22 @@ figure {
 
  .video {
     margin-top: .4em;
+ }
+
+ a {
+  color: #6572E8;
+  font-weight: bold;
+  text-decoration: none;
+  &:hover {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    color: inherit;
+    text-decoration: inherit;
+    filter: opacity(.5);
   }
+}
 
  h1 {
     font-size: 36px;
@@ -433,7 +449,7 @@ figure {
   }
 
  ul {
-  padding: 0 0 0 1em;
+  padding: 0 0 0 2.5em;
   line-height: 1.8em;
  }
 
@@ -446,12 +462,16 @@ figure {
     padding: 1.5em;
   }
 
- .writing {
-    line-height: 2em;
-  }
-
  .publications {
     display: none;
+ }
+
+ .section-links {
+   a {
+     text-decoration: underline #6572E8;
+     font-weight: normal;
+     color: #353535;
+   }
  }
 
  .note {
