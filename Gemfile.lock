@@ -218,7 +218,7 @@ DEPENDENCIES
   wdm (~> 0.1)
 
 RUBY VERSION
-   ruby 2.6.7p197
+   ruby 2.6.4p104
 
 BUNDLED WITH
    2.2.17
