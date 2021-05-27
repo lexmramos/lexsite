@@ -365,9 +365,8 @@ figure {
   }
 
  .navigation {
-   padding: 1em 0; 
+   padding: 1em; 
    flex-wrap: wrap;
-   justify-content: center;
  }
 
  .navi-content {
@@ -376,12 +375,9 @@ figure {
  }
 
  .navi-title {
-   display: none;
+  font-size: 32px;
+  letter-spacing: -2px;
   }
-
- .navi-link {
-   padding: 0 .8em;
- }
 
  .footer {
     padding: 1em;
