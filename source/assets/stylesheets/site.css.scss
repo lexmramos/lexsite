@@ -187,7 +187,7 @@ figcaption {
   margin: .4em;
   a{
     color: inherit;
-    text-decoration: underline 1px #6572E8;
+    text-decoration: underline 2px #6572E8;
   }
 }
 
@@ -479,5 +479,13 @@ figure {
  .val{
     margin-top: 0;
     margin-left: .5em;
+  }
+ 
+ figcaption {
+    a {
+      color: #6572E8;
+      text-decoration: none;
+      font-weight: bold;
+    }
   }
 }
