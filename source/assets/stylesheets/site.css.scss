@@ -187,6 +187,7 @@ figcaption {
   margin: .4em;
   a{
     color: inherit;
+    text-decoration: underline 1px #6572E8;
   }
 }
 
@@ -241,15 +242,15 @@ hr {
   }
 }
 
-.anim-title {
-  padding-top: .5em;
-}
-
 .space-below-sm {
   margin-bottom: .5em;
 }
 
 .space-below-lg {
+  margin-bottom: 1.5em;
+}
+
+.space-below-art {
   margin-bottom: 1.5em;
 }
 
@@ -275,7 +276,7 @@ hr {
 
 // IMAGES & MEDIA
 img{
-  width: 100%
+  width: 100%;
 }
 
 figure {
