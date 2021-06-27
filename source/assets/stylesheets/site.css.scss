@@ -180,7 +180,7 @@ li {
 }
 
 figcaption {
-  color: #BCBCBC;
+  color: #6572E8;
   font-size: 12px;
   text-align: center;
   line-height: 1.6em;
@@ -371,13 +371,13 @@ figure {
  }
 
  .navi-content {
-   font-size: 20px;
-   letter-spacing: -1px;
+   font-size: 24px;
+   letter-spacing: 0px;
  }
 
  .navi-title {
-  font-size: 32px;
-  letter-spacing: -2px;
+  font-size: 36px;
+  letter-spacing: 0px;
   }
 
  .footer {
@@ -484,8 +484,8 @@ figure {
  figcaption {
     a {
       color: #6572E8;
-      text-decoration: none;
-      font-weight: bold;
+      font-weight: normal;
+      text-decoration: underline 1px #6572E8;
     }
   }
 }
